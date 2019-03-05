@@ -1,6 +1,8 @@
 package com.ntapia.employeeapp.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.io.Serializable;
@@ -10,6 +12,8 @@ import java.math.BigDecimal;
  * Employee Entity
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Employee implements Serializable {
 
     public enum ContractType {
