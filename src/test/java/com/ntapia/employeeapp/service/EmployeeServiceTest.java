@@ -1,19 +1,18 @@
 package com.ntapia.employeeapp.service;
 
 import com.ntapia.employeeapp.dao.EmployeeDAO;
-import com.ntapia.employeeapp.model.Employee;
 import com.ntapia.employeeapp.dto.EmployeeHourlySalaryDTO;
 import com.ntapia.employeeapp.dto.EmployeeMonthlySalaryDTO;
 import com.ntapia.employeeapp.dto.EmployeeSalaryDTO;
 import com.ntapia.employeeapp.dto.Util;
 import com.ntapia.employeeapp.exception.EmployeeNotFoundException;
+import com.ntapia.employeeapp.model.Employee;
 import com.ntapia.employeeapp.service.impl.EmployeeServiceImpl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Spy;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.math.BigDecimal;
@@ -33,9 +32,6 @@ public class EmployeeServiceTest {
 
     @Mock
     private EmployeeDAO employeeDAO;
-
-    @Spy
-    private FactoryEmployeeDTO _factoryEmployeeDTO = new FactoryEmployeeDTO();
 
     @InjectMocks
     private EmployeeServiceImpl employeeService;

@@ -9,7 +9,10 @@ import com.ntapia.employeeapp.model.Employee;
 /**
  * Employee DTO Factory
  */
-public class FactoryEmployeeDTO {
+public final class FactoryEmployeeDTO {
+
+    private FactoryEmployeeDTO() {
+    }
 
     /**
      * Method to build a Employee Salary DTO
