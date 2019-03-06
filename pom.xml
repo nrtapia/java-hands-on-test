@@ -72,7 +72,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${build.directory}/classes/resources</outputDirectory>
+                            <outputDirectory>${project.basedir}/src/main/resources/static</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>frontend/dist/frontend/</directory>
