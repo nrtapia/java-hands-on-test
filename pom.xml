@@ -72,10 +72,10 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${build.directory}/classes/static/</outputDirectory>
+                            <outputDirectory>${build.directory}/classes/resources</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>/frontend/dist</directory>
+                                    <directory>frontend/dist/frontend/</directory>
                                 </resource>
                             </resources>
                         </configuration>

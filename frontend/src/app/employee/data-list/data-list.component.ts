@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Employee} from "../employee";
 
 @Component({
   selector: 'app-data-list',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-list.component.css']
 })
 export class DataListComponent implements OnInit {
+
+  @Input() list: Employee[] = [];
 
   constructor() { }
 

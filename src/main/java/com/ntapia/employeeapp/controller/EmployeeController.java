@@ -15,11 +15,11 @@ import java.util.List;
 /**
  * Controller to expose Employee REST endpoints
  *
- * GET    /employees
- * GET    /employees/{id}
+ * GET    /api/employees
+ * GET    /api/employees/{id}
  */
 @RestController
-@RequestMapping("/employees")
+@RequestMapping("/api/employees")
 public class EmployeeController {
 
     private static final String PATH_ID = "/{id}";

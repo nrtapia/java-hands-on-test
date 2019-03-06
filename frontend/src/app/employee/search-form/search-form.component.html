@@ -1,11 +1,19 @@
-<form class="form-inline">
+<form class="form-inline" name="form" [formGroup]="form" (ngSubmit)="onSubmit()">
   <div class="form-group mb-2">
     <label for="staticId" class="sr-only">Employee ID</label>
     <input type="text" class="form-control-plaintext" id="staticId" value="Employee ID">
   </div>
   <div class="form-group mx-sm-3 mb-2">
-    <label for="id" class="sr-only">Password</label>
-    <input type="text" class="form-control" id="id" placeholder="1 x">
+    <label for="id" class="sr-only">ID</label>
+    <input type="number" formControlName="employeeId" id="id" class="form-control" #employeeId>
   </div>
   <button type="submit" class="btn btn-primary mb-2">Get Employees</button>
 </form>
+
+
+<div class="alert alert-danger" role="alert" *ngIf="error">
+  {{error}}
+</div>
+
+<app-data-list [list]="employeeList"></app-data-list>
+
