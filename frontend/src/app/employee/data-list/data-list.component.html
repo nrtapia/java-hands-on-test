@@ -1,0 +1,28 @@
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Contract</th>
+    <th>Role Id</th>
+    <th>Role</th>
+    <th>Description</th>
+    <th>Hourly Salary</th>
+    <th>Monthly Salary</th>
+    <th>Annual Salary</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let row of list">
+    <td>{{row.id}}</td>
+    <td>{{row.name}}</td>
+    <td>{{row.contractTypeName}}</td>
+    <td>{{row.roleId}}</td>
+    <td>{{row.roleName}}</td>
+    <td>{{row.roleDescription}}</td>
+    <td>{{row.hourlySalary | currency}}</td>
+    <td>{{row.monthlySalary | currency}}</td>
+    <td>{{row.annualSalary | currency}}</td>
+  </tr>
+  </tbody>
+</table>
