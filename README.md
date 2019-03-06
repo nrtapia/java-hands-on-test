@@ -1,5 +1,9 @@
 # Java Hands On Test
 
+## Online Test
+
+You can visit `https://employee-app-test.herokuapp.com/`
+
 ## Prerequisites
 - Node.js
 - npm package manager
